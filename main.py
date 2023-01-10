@@ -53,13 +53,13 @@ def change_password():
     password = change
     print("")
 
-def menu():
+def show_menu():
   print("(1) Change Password")
   print("(2) See Balance")
   print("(3) Add to Balance")
   print("(4) Quit")
   print("")
-  choice = int(input("Where would you like to go? "))
+  choice = int(input("What can I help you with today? "))
   print("")
   if choice == 1:
     change_password()
@@ -68,7 +68,7 @@ def menu():
   elif choice == 3:
     add_to_balance()
   elif choice == 4:
-    print("Closing...")
+    print("Thank you for choosing JMBorgan for your banking needs today. Closing...")
     global on
     on = False
   else:
@@ -76,4 +76,6 @@ def menu():
   print("")
 
 while on:
-  menu()
+  print("Hello. I'm your virtual assistant today at JMBorgan.")
+  print("")
+  show_menu()
